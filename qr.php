@@ -1,8 +1,9 @@
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="cache-control" content="no-cache" />
-<title>简悦wifi验证系统</title>
+<title>GUEST-WIFI验证系统</title>
 <style>
   #center{
     display: inline-block;
@@ -32,7 +33,7 @@ function getRealIpAddr()
   return $ip;
 }
 $ip=getRealIpAddr();
-$wifidomain="radius.ejoy.com";
+$wifidomain="wifi.xxx.com";
 $url="http://$wifidomain/index.php";
 
     //set it to writable location, a place for temp generated PNG files

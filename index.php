@@ -1,8 +1,9 @@
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="cache-control" content="no-cache" />
-<title>简悦wifi验证系统</title>
+<title>GUEST-WIFI验证系统</title>
 <style>
   #center{
     display: inline-block;
@@ -32,9 +33,9 @@ function getRealIpAddr()
   return $ip;
 }
 $ip=getRealIpAddr();
-$wifidomain="radius.ejoy.com";
+$wifidomain="wifi.xxx.com";
 $guest_id = time();
-echo "<center><h1>简悦WIFI二维码验证系统</h1></center>";
+echo "<center><h1>GUEST-WIFI二维码验证系统</h1></center>";
 echo "<h1>请找管理员扫描通过验证<br>GUEST_ID:$guest_id<br>";
 $url="http://$wifidomain/auth/openfw.php?ip=".$ip;
 
