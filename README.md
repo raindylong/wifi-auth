@@ -21,8 +21,9 @@
 
 ----安全----
 为了防止通过认证的访客手机也可以认证另外的访客手机，最好在nginx/apache加入IP验证，屏蔽GUEST-WIFI网段进行认证：
-
+<code>
   location ~ /auth/ {
                     allow 192.168.0.0/16;
                     deny all;
   }
+  </code>
